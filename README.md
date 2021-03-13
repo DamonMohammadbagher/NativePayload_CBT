@@ -5,7 +5,7 @@ Note: These C# Codes Tested by .Net Framework 3.5 or 4.0 only ;) & some of Codes
 
 Note: These Useful Techniques made by Security Researcher @S4R1N. 
 
-Special Thanks to S4R1N for Original C++ Source ==> https://github.com/S4R1N/AlternativeShellcodeExec
+Special Thanks to S4R1N for Original C++ Source:  https://github.com/S4R1N/AlternativeShellcodeExec
 --------------------------------------------
 
  NativePayload_ImageGetDigestStream.cs (Callback Functions Technique via ImageGetDigestStream Native API)
