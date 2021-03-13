@@ -18,7 +18,7 @@ Special Thanks to S4R1N for Original C++ Source ==> https://github.com/S4R1N/Alt
 
    ![](https://github.com/DamonMohammadbagher/NativePayload_CBT/blob/main/Pics/_CallBack_ImageGetDigestStream.png)
 
- --------------------------------------------    
+ -----------------------------------------------------------    
   NativePayload_EnumWindows.cs (Callback Functions Technique via EnumWindows Native API)
  
  usage: 
@@ -39,7 +39,8 @@ Special Thanks to S4R1N for Original C++ Source ==> https://github.com/S4R1N/Alt
     example: NativePayload_EnumWindowStationsW.exe "fc,48,00,87,00,...."
 
    ![](https://github.com/DamonMohammadbagher/NativePayload_CBT/blob/main/Pics/_CallBack_EnumWindowStationW.png)
-    --------------------------------------------    
+   
+   --------------------------------------------    
   NativePayload_EnumResourceTypesW.cs (Callback Functions Technique via EnumResourceTypesW Native API)
  
  usage: 
