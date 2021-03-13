@@ -1,5 +1,5 @@
 # NativePayload_CBT 
-NativePayload_CallBackTechniques C# Codes (Code Execution via CallBack Functions, without CreateThread Native API)
+NativePayload_CallBackTechniques C# Codes (Code Execution via Callback Functions, without CreateThread Native API)
 ------------
 Note: These C# Codes Tested by .Net Framework 3.5 or 4.0 only ;) & some of Codes are ready but i will Publish almost all of them from S4R1N C++ repo (soon)
 
