@@ -7,6 +7,13 @@ Note: These Useful Techniques made by Security Researcher @S4R1N.
 
 Special Thanks to S4R1N for Original C++ Source:  https://github.com/S4R1N/AlternativeShellcodeExec
 --------------------------------------------
+C# Codes: (new C# codes will publish here soon...)
+   
+    1. NativePayload_ImageGetDigestStream.cs
+    2. NativePayload_EnumWindows.cs
+    3. NativePayload_EnumWindowStationsW.cs
+    4. NativePayload_EnumResourceTypesW.cs
+--------------------------------------------
 
  NativePayload_ImageGetDigestStream.cs (Callback Functions Technique via ImageGetDigestStream Native API)
  
