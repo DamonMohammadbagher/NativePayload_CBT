@@ -51,6 +51,7 @@ namespace NativePayload_CreateTimerQueueTimer
         private static extern IntPtr CreateTimerQueue();
         [DllImport("kernel32.dll")]
         private static extern bool CreateTimerQueueTimer(out IntPtr phNewTimer, IntPtr TimerQueue, IntPtr Callback, uint Parameter, uint DueTime, uint Period, ulong Flags);
+         /// lpName for "CreateEventA" should be LPCSTR not bool ;) but this code works ...
         [DllImport("kernel32.dll")]
         private static extern IntPtr CreateEventA(IntPtr lpEventAttributes, bool bManualReset, bool bInitialState, bool lpName);
         [DllImport("kernel32.dll")]
