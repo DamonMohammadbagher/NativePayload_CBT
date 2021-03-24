@@ -5,9 +5,9 @@ Note: These C# Codes Tested by .Net Framework 3.5 or 4.0 only ;) & some of Codes
 
 Note: These Useful Techniques made by Security Researcher "@S4R1N" also Codes [13,14,15] made by Security Researcher "Chaitanya Haritash"
 
-Special Thanks to "S4R1N" for Original C++ Source:  https://github.com/S4R1N/AlternativeShellcodeExec
+Special Thanks to "S4R1N" for Original C++ Source: https://github.com/S4R1N/AlternativeShellcodeExec
 
-Special Thanks to "Chaitanya Haritash" for Original C++ Source:  https://github.com/ChaitanyaHaritash/Callback_Shellcode_Injection
+Special Thanks to "Chaitanya Haritash" for Original C++ Source: https://github.com/ChaitanyaHaritash/Callback_Shellcode_Injection
 
 Video: https://www.youtube.com/watch?v=k473K7lWc5Q
 
