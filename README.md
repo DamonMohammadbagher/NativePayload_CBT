@@ -11,7 +11,6 @@ Special Thanks to "Chaitanya Haritash" for Original C++ Source: https://github.c
 
 Video: https://www.youtube.com/watch?v=k473K7lWc5Q
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=damonmohammadbagher&layout=compact&theme=dark&hide=javascript,css,html&bg_color=DEG,ffffff,008000,41b003&hide_border=true&text_color=ffffff)](https://github.com/damonmohammadbagher/github-readme-stats)
 
 --------------------------------------------
 C# Codes: "New C# codes for Callback Functions will publish here soon..."
