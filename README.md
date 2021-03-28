@@ -212,6 +212,7 @@ usage:
    
  --------------------------------------------   
    16. NativePayload_AsyncMethodEUILA.cs (Callback Functions Technique via EnumUILanguagesA API + Async Csharp Method)
+   Note: it means we can use Callback Native API functions to Invoke C# Codes/Methods (like async call) etc.
  
  usage: 
     
