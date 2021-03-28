@@ -21,10 +21,10 @@ namespace NativePayload_AsyncMethodEUILA
             ExecuteReadWrite = 0x0040
         }
 
-        //[DllImport("kernel32.dll")]
-        //public static extern IntPtr LoadLibraryW([MarshalAs(UnmanagedType.LPWStr)]string lpFileName);
-        [DllImport("kernel32")]
-        public static extern IntPtr CreateThread(UInt32 lpThreadAttributes, UInt32 dwStackSize, UInt32 lpStartAddress, IntPtr param, UInt32 dwCreationFlags, ref UInt32 lpThreadId);
+        // [DllImport("kernel32.dll")]
+        // public static extern IntPtr LoadLibraryW([MarshalAs(UnmanagedType.LPWStr)]string lpFileName);
+        // [DllImport("kernel32")]
+        // public static extern IntPtr CreateThread(UInt32 lpThreadAttributes, UInt32 dwStackSize, UInt32 lpStartAddress, IntPtr param, UInt32 dwCreationFlags, ref UInt32 lpThreadId);
         [DllImport("ntdll.dll")]
         private static extern bool RtlMoveMemory(IntPtr addr, byte[] pay, uint size);
         [DllImport("kernelbase.dll")]
