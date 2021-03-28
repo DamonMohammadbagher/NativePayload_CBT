@@ -30,7 +30,7 @@ C# Codes: "New C# codes for Callback Functions will publish here soon..."
     13. NativePayload_EnumSystemCodePagesA.cs  (by ChaitanyaHaritash)
     14. NativePayload_EnumSystemLocalesA.cs  (by ChaitanyaHaritash)
     15. NativePayload_EnumUILanguagesA.cs  (by ChaitanyaHaritash)
-    16. NativePayload_AsyncMethodEUILA.cs (by me ;D)
+    16. NativePayload_AsyncMethodEUILA.cs (Async C# Method + EnumUILanguagesA)
 
 --------------------------------------------
    NativePayload_CBT.cs (Some of Callback Function Codes/Techniques in one code)
