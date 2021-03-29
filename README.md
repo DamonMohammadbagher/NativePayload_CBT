@@ -11,6 +11,18 @@ Special Thanks to "Chaitanya Haritash" for Original C++ Source: https://github.c
 
 Video: https://www.youtube.com/watch?v=k473K7lWc5Q
 
+--------------------------------------------
+
+My article for Call/Invoke C# Async Codes/Methods via Native Callback Functions (NativePayload_AsyncM* Codes) 
+
+Link1: https://damonmohammadbagher.github.io/Posts/29mar2021x.html
+
+Link2: https://www.linkedin.com/pulse/callinvoke-async-c-method-via-callback-function-apis-mohammadbagher/
+   
+    NativePayload_AsyncMethodEUILA.cs  (Async C# Method + EnumUILanguagesA)
+    NativePayload_AsyncMEnumSystemLocalesA.cs  (Async C# Method + EnumSystemLocalesA)
+    NativePayload_AsyncMEnumDisplayMonitors.cs  (Async C# Method + EnumDisplayMonitors)
+
 
 --------------------------------------------
 C# Codes: "New C# codes for Callback Functions will publish here soon..."
