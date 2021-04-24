@@ -27,24 +27,24 @@ Link2: https://www.linkedin.com/pulse/callinvoke-async-c-method-via-callback-fun
 --------------------------------------------
 C# Codes: "New C# codes for Callback Functions will publish here soon..."
 ```diff
-#    1. NativePayload_ImageGetDigestStream.cs
-#    2. NativePayload_EnumWindows.cs
-#    3. NativePayload_EnumWindowStationsW.cs
-#    4. NativePayload_EnumResourceTypesW.cs
-#    5. NativePayload_EnumChildWindows.cs
-#    6. NativePayload_EnumDisplayMonitors.cs
-#    7. NativePayload_EnumPageFilesW.cs
-#    8. NativePayload_EnumPropsExW.cs
-#    9. NativePayload_EnumerateLoadedModules.cs
-#    10. NativePayload_CreateThreadPoolWait.cs
-#    11. NativePayload_CreateTimerQueueTimer.cs
-#    12. NativePayload_SymInitialize.cs
-!    13. NativePayload_EnumSystemCodePagesA.cs  (by ChaitanyaHaritash)
-!    14. NativePayload_EnumSystemLocalesA.cs  (by ChaitanyaHaritash)
-!    15. NativePayload_EnumUILanguagesA.cs  (by ChaitanyaHaritash)
-+    16. NativePayload_AsyncMethodEUILA.cs  (Async C# Method + EnumUILanguagesA)
-+    17. NativePayload_AsyncMEnumSystemLocalesA.cs  (Async C# Method + EnumSystemLocalesA)
-+    18. NativePayload_AsyncMEnumDisplayMonitors.cs  (Async C# Method + EnumDisplayMonitors)
++    1. NativePayload_ImageGetDigestStream.cs
+     2. NativePayload_EnumWindows.cs
++    3. NativePayload_EnumWindowStationsW.cs
+     4. NativePayload_EnumResourceTypesW.cs
++    5. NativePayload_EnumChildWindows.cs
+     6. NativePayload_EnumDisplayMonitors.cs
++    7. NativePayload_EnumPageFilesW.cs
+     8. NativePayload_EnumPropsExW.cs
++    9. NativePayload_EnumerateLoadedModules.cs
+     10. NativePayload_CreateThreadPoolWait.cs
++    11. NativePayload_CreateTimerQueueTimer.cs
+     12. NativePayload_SymInitialize.cs
++    13. NativePayload_EnumSystemCodePagesA.cs  (by ChaitanyaHaritash)
+     14. NativePayload_EnumSystemLocalesA.cs  (by ChaitanyaHaritash)
++    15. NativePayload_EnumUILanguagesA.cs  (by ChaitanyaHaritash)
+!    16. NativePayload_AsyncMethodEUILA.cs  (Async C# Method + EnumUILanguagesA)
+!    17. NativePayload_AsyncMEnumSystemLocalesA.cs  (Async C# Method + EnumSystemLocalesA)
+!    18. NativePayload_AsyncMEnumDisplayMonitors.cs  (Async C# Method + EnumDisplayMonitors)
 ```
 --------------------------------------------
    NativePayload_CBT.cs (Some of Callback Function Codes/Techniques in one code)
